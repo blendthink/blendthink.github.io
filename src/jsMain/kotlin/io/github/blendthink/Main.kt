@@ -1,3 +1,6 @@
+package io.github.blendthink
+
+import org.jetbrains.compose.web.css.Style
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
@@ -13,6 +16,8 @@ fun main() {
     var count: Int by mutableStateOf(0)
 
     renderComposable(rootElementId = "root") {
+        Style()
+
         Div({ style { padding(25.px) } }) {
             Button(attrs = {
                 onClick { count -= 1 }
