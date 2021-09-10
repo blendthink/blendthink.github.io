@@ -23,6 +23,25 @@ fun PageMain() {
                 }
             }
 
+            H2({
+                style {
+                    paddingBottom(20.px)
+                    color(rgb(255, 255, 255))
+                }
+            }) {
+                Text("Tatsuya Okayama")
+            }
+
+            Small({
+                style {
+                    color(rgba(255, 255, 255, 0.3))
+                }
+            }) {
+                I {
+                    Text("People have different ways of feeling and thinking. All of those are right.")
+                }
+            }
+
             Ul({
                 style {
                     padding(40.px)
