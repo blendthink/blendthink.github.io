@@ -14,11 +14,16 @@ fun PageMain() {
                 textAlign("center")
             }
         }) {
-            Img(src = "blendthink.png", alt = "blendthink") {
-                style {
-                    width(8.em)
-                    borderRadius(50.percent)
-                    padding(40.px)
+
+            A(href = "https://blendthink.notion.site/blendthink/d9624d9360544b3bbf97074ec1706ce7", attrs = {
+                target(ATarget.Blank)
+            }) {
+                Img(src = "blendthink.png", alt = "blendthink") {
+                    style {
+                        width(8.em)
+                        borderRadius(50.percent)
+                        padding(40.px)
+                    }
                 }
             }
 
