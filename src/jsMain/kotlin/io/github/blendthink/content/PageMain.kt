@@ -12,7 +12,7 @@ fun PageMain() {
                 textAlign("center")
             }
         }) {
-            Img(src = "okayaman.png", alt = "おかやまん") {
+            Img(src = "blendthink.png", alt = "blendthink") {
                 style {
                     width(8.em)
                     borderRadius(50.percent)
