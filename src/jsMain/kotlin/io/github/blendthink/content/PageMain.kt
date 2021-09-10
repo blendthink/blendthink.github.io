@@ -25,7 +25,7 @@ fun PageMain() {
 
             Ul({
                 style {
-                    paddingLeft(0.px)
+                    padding(40.px)
                     listStyle("none")
                 }
             }) {
