@@ -16,7 +16,7 @@ fun PageMain() {
         }) {
             Img(src = "okayaman.png", alt = "おかやまん") {
                 style {
-                    width(6.em)
+                    width(8.em)
                     borderRadius(50.percent)
                 }
             }
