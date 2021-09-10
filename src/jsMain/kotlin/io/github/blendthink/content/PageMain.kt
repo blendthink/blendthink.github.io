@@ -1,6 +1,8 @@
 package io.github.blendthink.content
 
 import androidx.compose.runtime.Composable
+import org.jetbrains.compose.web.attributes.ATarget
+import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 
@@ -32,7 +34,9 @@ fun PageMain() {
                         display(DisplayStyle.InlineBlock)
                     }
                 }) {
-                    A(href = "https://twitter.com/blendthink") {
+                    A(href = "https://twitter.com/blendthink", attrs = {
+                        target(ATarget.Blank)
+                    }) {
                         I({
                             classes("fab", "fa-twitter", "fa-3x")
                             style {
@@ -47,7 +51,9 @@ fun PageMain() {
                         display(DisplayStyle.InlineBlock)
                     }
                 }) {
-                    A(href = "https://github.com/blendthink") {
+                    A(href = "https://github.com/blendthink", attrs = {
+                        target(ATarget.Blank)
+                    }) {
                         I({
                             classes("fab", "fa-github", "fa-3x")
                             style {
