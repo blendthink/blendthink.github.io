@@ -10,6 +10,7 @@ object AppStylesheet : StyleSheet() {
 
         CSSSelector.Universal style {
             margin(0.px)
+            backgroundColor(rgb(50, 50, 54))
         }
 
         id("root") style {

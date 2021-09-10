@@ -11,7 +11,6 @@ fun PageFooter() {
     Footer({
         style {
             padding(20.px)
-            backgroundColor(rgb(50, 50, 54))
         }
     }) {
         Span({
