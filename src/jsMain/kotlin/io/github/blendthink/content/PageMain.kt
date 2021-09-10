@@ -1,8 +1,6 @@
 package io.github.blendthink.content
 
 import androidx.compose.runtime.Composable
-import org.jetbrains.compose.web.attributes.ATarget
-import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 
@@ -15,9 +13,7 @@ fun PageMain() {
             }
         }) {
 
-            A(href = "https://blendthink.notion.site/blendthink/d9624d9360544b3bbf97074ec1706ce7", attrs = {
-                target(ATarget.Blank)
-            }) {
+            A(href = "https://blendthink.notion.site/blendthink/d9624d9360544b3bbf97074ec1706ce7") {
                 Img(src = "blendthink.png", alt = "blendthink") {
                     style {
                         width(8.em)
@@ -39,9 +35,7 @@ fun PageMain() {
                         display(DisplayStyle.InlineBlock)
                     }
                 }) {
-                    A(href = "https://twitter.com/blendthink", attrs = {
-                        target(ATarget.Blank)
-                    }) {
+                    A(href = "https://twitter.com/blendthink") {
                         I({
                             classes("fab", "fa-twitter", "fa-3x")
                             style {
@@ -56,9 +50,7 @@ fun PageMain() {
                         display(DisplayStyle.InlineBlock)
                     }
                 }) {
-                    A(href = "https://github.com/blendthink", attrs = {
-                        target(ATarget.Blank)
-                    }) {
+                    A(href = "https://github.com/blendthink") {
                         I({
                             classes("fab", "fa-github", "fa-3x")
                             style {
