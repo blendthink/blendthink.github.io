@@ -16,6 +16,7 @@ fun PageMain() {
                 style {
                     width(8.em)
                     borderRadius(50.percent)
+                    padding(40.px)
                 }
             }
 
