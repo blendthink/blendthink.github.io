@@ -2,7 +2,7 @@ package io.github.blendthink.style
 
 import org.jetbrains.compose.web.css.*
 
-object AppStylesheet : StyleSheet() {
+object AppStyle : StyleSheet() {
     init {
 
         universal style {
