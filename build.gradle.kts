@@ -1,7 +1,8 @@
+@file:Suppress("UNUSED_EXPRESSION", "UNUSED_VARIABLE")
 
 plugins {
-    kotlin("multiplatform") version "1.5.30"
-    id("org.jetbrains.compose") version "1.0.0-alpha4-build331"
+    kotlin("multiplatform")
+    id("org.jetbrains.compose")
 }
 
 repositories {
@@ -11,7 +12,20 @@ repositories {
 
 kotlin {
     js(IR) {
-        browser()
+        browser {
+            runTask {
+                devServer = devServer?.copy(
+                    open = false
+                )
+            }
+            testTask {
+                testLogging.showStandardStreams = true
+                useKarma {
+                    useChromeHeadless()
+                    useFirefox()
+                }
+            }
+        }
         binaries.executable()
     }
     sourceSets {
@@ -19,6 +33,11 @@ kotlin {
             dependencies {
                 implementation(compose.web.core)
                 implementation(compose.runtime)
+            }
+        }
+        val jsTest by getting {
+            dependencies {
+                implementation(kotlin("test-js"))
             }
         }
     }
