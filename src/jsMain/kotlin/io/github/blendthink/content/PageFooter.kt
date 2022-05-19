@@ -21,7 +21,7 @@ fun PageFooter() {
                 fontSize(0.7.cssRem)
             }
         }) {
-            Text("Copyright © 2021 blendthink All rights reserved.")
+            Text("Copyright © 2022 blendthink")
         }
     }
 }
