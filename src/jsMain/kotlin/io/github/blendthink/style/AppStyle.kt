@@ -1,7 +1,9 @@
 package io.github.blendthink.style
 
 import io.github.blendthink.extension.Tag
+import io.github.blendthink.extension.TextAlign
 import io.github.blendthink.extension.tag
+import io.github.blendthink.extension.textAlign
 import org.jetbrains.compose.web.css.*
 
 object AppStyle : StyleSheet() {
@@ -22,7 +24,7 @@ object AppStyle : StyleSheet() {
     }
 
     val mainContent by style {
-        textAlign("center")
+        textAlign(TextAlign.Center)
     }
 
     val profileIcon by style {
