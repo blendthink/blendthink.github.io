@@ -33,7 +33,7 @@ object AppStyle : StyleSheet() {
 
     val name by style {
         marginBottom(1.5.cssRem)
-        color(rgb(255, 255, 255))
+        color(Color.white)
     }
 
     val thinking by style {
