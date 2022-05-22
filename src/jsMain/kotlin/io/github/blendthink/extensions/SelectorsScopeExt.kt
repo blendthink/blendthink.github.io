@@ -4,19 +4,14 @@ package io.github.blendthink.extensions
 
 import org.jetbrains.compose.web.css.SelectorsScope
 
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 fun SelectorsScope.tag(tag: Tag) = type(tag.name)
 
 enum class Tag {
-    /**
-     * Main root
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#main_root
-     */
+    // Main root
     Html,
 
-    /**
-     * Document metadata
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#document_metadata
-     */
+    // Document metadata
     Base,
     Head,
     Link,
@@ -24,16 +19,10 @@ enum class Tag {
     Style,
     Title,
 
-    /**
-     * Sectioning root
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#sectioning_root
-     */
+    // Sectioning root
     Body,
 
-    /**
-     * Content sectioning
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning
-     */
+    // Content sectioning
     Address,
     Article,
     Aside,
@@ -49,10 +38,7 @@ enum class Tag {
     Nav,
     Section,
 
-    /**
-     * Text content
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#text_content
-     */
+    // Text content
     Blockquote,
     Dd,
     Div,
@@ -67,10 +53,7 @@ enum class Tag {
     Pre,
     Ul,
 
-    /**
-     * Inline text semantics
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics
-     */
+    // Inline text semantics
     A,
     Abbr,
     B,
@@ -100,10 +83,7 @@ enum class Tag {
     Var,
     Wbr,
 
-    /**
-     * Image and multimedia
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#image_and_multimedia
-     */
+    // Image and multimedia
     Area,
     Audio,
     Img,
@@ -111,10 +91,7 @@ enum class Tag {
     Track,
     Video,
 
-    /**
-     * Embedded content
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#embedded_content
-     */
+    // Embedded content
     Embed,
     Iframe,
     Object,
@@ -122,32 +99,20 @@ enum class Tag {
     Portal,
     Source,
 
-    /**
-     * SVG and MathML
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#svg_and_mathml
-     */
+    // SVG and MathML
     Svg,
     Math,
 
-    /**
-     * Scripting
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#scripting
-     */
+    // Scripting
     Canvas,
     Noscript,
     Script,
 
-    /**
-     * Demarcating edits
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#demarcating_edits
-     */
+    // Demarcating edits
     Del,
     Ins,
 
-    /**
-     * Table content
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#table_content
-     */
+    // Table content
     Caption,
     Col,
     Colgroup,
@@ -159,10 +124,7 @@ enum class Tag {
     Thead,
     Tr,
 
-    /**
-     * Forms
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#forms
-     */
+    // Forms
     Button,
     Datalist,
     Fieldset,
@@ -178,18 +140,12 @@ enum class Tag {
     Select,
     Textarea,
 
-    /**
-     * Interactive elements
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#interactive_elements
-     */
+    // Interactive elements
     Details,
     Dialog,
     Summary,
 
-    /**
-     * Web Components
-     * see https://developer.mozilla.org/en-US/docs/Web/HTML/Element#web_components
-     */
+    // Web Components
     Slot,
     Template,
 }
