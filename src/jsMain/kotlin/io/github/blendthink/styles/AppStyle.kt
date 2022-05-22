@@ -8,11 +8,12 @@ import org.jetbrains.compose.web.css.*
 
 object AppStyle : StyleSheet() {
     init {
-        tag(Tag.Body) style {
+        id("root") style {
+            position(Position.Relative)
             display(DisplayStyle.Flex)
             flexFlow(FlexDirection.Column, FlexWrap.Wrap)
             minHeight(100.vh)
-            backgroundColor(Color.black)
+            backgroundColor(Color.transparent)
 
             tag(Tag.Main) style {
                 flex(1)

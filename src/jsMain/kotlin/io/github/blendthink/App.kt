@@ -8,10 +8,10 @@ import io.github.blendthink.styles.AppStyle
 import org.jetbrains.compose.web.dom.Footer
 import org.jetbrains.compose.web.dom.Header
 import org.jetbrains.compose.web.dom.Main
-import org.jetbrains.compose.web.renderComposableInBody
+import org.jetbrains.compose.web.renderComposable
 
 fun main() {
-    renderComposableInBody {
+    renderComposable("root") {
         Style(AppStyle)
 
         Header {
