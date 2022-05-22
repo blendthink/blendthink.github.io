@@ -5,15 +5,13 @@ import io.github.blendthink.content.main.widgets.Name
 import io.github.blendthink.content.main.widgets.ProfileIcon
 import io.github.blendthink.content.main.widgets.SocialLinks
 import io.github.blendthink.content.main.widgets.Thinking
-import org.jetbrains.compose.web.css.*
+import io.github.blendthink.style.AppStyle
 import org.jetbrains.compose.web.dom.*
 
 @Composable
 fun MainContent() {
     Div({
-        style {
-            textAlign("center")
-        }
+        classes(AppStyle.mainContent)
     }) {
 
         ProfileIcon()

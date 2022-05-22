@@ -19,6 +19,10 @@ object AppStyle : StyleSheet() {
         }
     }
 
+    val mainContent by style {
+        textAlign("center")
+    }
+
     val profileIcon by style {
         type("img") style {
             width(16.cssRem)
