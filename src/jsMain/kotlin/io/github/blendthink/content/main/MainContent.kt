@@ -2,6 +2,7 @@ package io.github.blendthink.content.main
 
 import androidx.compose.runtime.Composable
 import io.github.blendthink.content.main.widgets.SocialLinks
+import io.github.blendthink.content.main.widgets.Thinking
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 
@@ -32,15 +33,7 @@ fun MainContent() {
             Text("Tatsuya Okayama")
         }
 
-        Small({
-            style {
-                color(rgba(255, 255, 255, 0.3))
-            }
-        }) {
-            I {
-                Text("People have different ways of feeling and thinking. All of those are right.")
-            }
-        }
+        Thinking()
 
         SocialLinks()
     }

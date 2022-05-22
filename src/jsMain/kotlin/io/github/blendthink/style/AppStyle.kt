@@ -19,6 +19,10 @@ object AppStyle : StyleSheet() {
         }
     }
 
+    val thinking by style {
+        color(Color.dimgray)
+    }
+
     val socialLinks by style {
         padding(1.cssRem)
     }
