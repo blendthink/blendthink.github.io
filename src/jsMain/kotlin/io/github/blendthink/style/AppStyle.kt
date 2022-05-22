@@ -18,4 +18,15 @@ object AppStyle : StyleSheet() {
             }
         }
     }
+
+    val footerContent by style {
+        display(DisplayStyle.Flex)
+        justifyContent(JustifyContent.Center)
+        padding(1.cssRem)
+    }
+
+    val copyright by style {
+        color(Color.dimgray)
+        fontSize(0.75.cssRem)
+    }
 }
