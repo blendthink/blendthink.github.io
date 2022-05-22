@@ -1,14 +1,14 @@
-package io.github.blendthink.content
+package io.github.blendthink.content.footer
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.css.*
-import org.jetbrains.compose.web.dom.Footer
+import org.jetbrains.compose.web.dom.Div
 import org.jetbrains.compose.web.dom.Span
 import org.jetbrains.compose.web.dom.Text
 
 @Composable
-fun PageFooter() {
-    Footer({
+fun FooterContent() {
+    Div({
         style {
             padding(20.px)
         }
