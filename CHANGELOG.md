@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.0] - 2022/05/22
+
+### Added
+
+- Add SpeakerDeck to SocialLinks
+
 ## [1.1.0] - 2022/05/22
 
 ### Fixed
