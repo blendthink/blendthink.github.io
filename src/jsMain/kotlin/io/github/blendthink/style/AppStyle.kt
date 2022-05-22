@@ -1,16 +1,18 @@
 package io.github.blendthink.style
 
+import io.github.blendthink.extension.Tag
+import io.github.blendthink.extension.tag
 import org.jetbrains.compose.web.css.*
 
 object AppStyle : StyleSheet() {
     init {
-        type("body") style {
+        tag(Tag.Body) style {
             display(DisplayStyle.Flex)
             flexFlow(FlexDirection.Column, FlexWrap.Wrap)
             minHeight(100.vh)
             backgroundColor(Color.black)
 
-            type("main") style {
+            tag(Tag.Main) style {
                 flex(1)
                 display(DisplayStyle.Flex)
                 alignItems(AlignItems.Center)
@@ -24,7 +26,7 @@ object AppStyle : StyleSheet() {
     }
 
     val profileIcon by style {
-        type("img") style {
+        tag(Tag.Img) style {
             width(16.cssRem)
             borderRadius(50.percent)
             padding(2.cssRem)
@@ -48,7 +50,7 @@ object AppStyle : StyleSheet() {
         display(DisplayStyle.InlineBlock)
         padding(1.cssRem)
 
-        type("svg") style {
+        tag(Tag.Svg) style {
             color(Color.dimgray)
         }
     }
