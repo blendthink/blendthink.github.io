@@ -4,24 +4,18 @@ import org.jetbrains.compose.web.css.*
 
 object AppStyle : StyleSheet() {
     init {
-
-        universal style {
-            margin(0.px)
-            backgroundColor(rgb(50, 50, 54))
-        }
-
-        id("root") style {
+        type("body") style {
             display(DisplayStyle.Flex)
             flexFlow(FlexDirection.Column, FlexWrap.Wrap)
             minHeight(100.vh)
+            backgroundColor(Color.black)
 
             type("main") style {
                 flex(1)
+                display(DisplayStyle.Flex)
+                alignItems(AlignItems.Center)
+                justifyContent(JustifyContent.Center)
             }
-        }
-
-        media(mediaMaxWidth(640.px)) {
-
         }
     }
 }

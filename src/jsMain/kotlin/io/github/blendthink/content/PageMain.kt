@@ -1,6 +1,8 @@
 package io.github.blendthink.content
 
 import androidx.compose.runtime.Composable
+import org.jetbrains.compose.web.attributes.ATarget
+import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 
@@ -16,7 +18,7 @@ fun PageMain() {
             A(href = "https://blendthink.notion.site/blendthink/d9624d9360544b3bbf97074ec1706ce7") {
                 Img(src = "blendthink.png", alt = "blendthink") {
                     style {
-                        width(8.em)
+                        width(16.cssRem)
                         borderRadius(50.percent)
                         padding(40.px)
                     }
@@ -44,17 +46,22 @@ fun PageMain() {
 
             Ul({
                 style {
-                    padding(40.px)
+                    padding(1.cssRem)
                     listStyle("none")
                 }
             }) {
                 Li({
                     style {
-                        padding(20.px)
                         display(DisplayStyle.InlineBlock)
+                        padding(1.cssRem)
                     }
                 }) {
-                    A(href = "https://twitter.com/blendthink") {
+                    A(
+                        href = "https://twitter.com/blendthink",
+                        attrs = {
+                            target(ATarget.Blank)
+                        },
+                    ) {
                         I({
                             classes("fab", "fa-twitter", "fa-3x")
                             style {
@@ -65,11 +72,16 @@ fun PageMain() {
                 }
                 Li({
                     style {
-                        padding(20.px)
                         display(DisplayStyle.InlineBlock)
+                        padding(1.cssRem)
                     }
                 }) {
-                    A(href = "https://github.com/blendthink") {
+                    A(
+                        href = "https://github.com/blendthink",
+                        attrs = {
+                            target(ATarget.Blank)
+                        },
+                    ) {
                         I({
                             classes("fab", "fa-github", "fa-3x")
                             style {
