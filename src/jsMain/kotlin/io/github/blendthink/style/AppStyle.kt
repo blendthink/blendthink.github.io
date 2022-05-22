@@ -19,6 +19,11 @@ object AppStyle : StyleSheet() {
         }
     }
 
+    val name by style {
+        marginBottom(1.5.cssRem)
+        color(rgb(255, 255, 255))
+    }
+
     val thinking by style {
         color(Color.dimgray)
     }

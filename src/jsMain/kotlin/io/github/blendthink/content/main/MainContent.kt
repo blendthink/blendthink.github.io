@@ -1,6 +1,7 @@
 package io.github.blendthink.content.main
 
 import androidx.compose.runtime.Composable
+import io.github.blendthink.content.main.widgets.Name
 import io.github.blendthink.content.main.widgets.SocialLinks
 import io.github.blendthink.content.main.widgets.Thinking
 import org.jetbrains.compose.web.css.*
@@ -24,14 +25,7 @@ fun MainContent() {
             }
         }
 
-        H2({
-            style {
-                paddingBottom(20.px)
-                color(rgb(255, 255, 255))
-            }
-        }) {
-            Text("Tatsuya Okayama")
-        }
+        Name()
 
         Thinking()
 
