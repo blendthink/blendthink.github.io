@@ -1,8 +1,7 @@
 package io.github.blendthink.content.main
 
 import androidx.compose.runtime.Composable
-import org.jetbrains.compose.web.attributes.ATarget
-import org.jetbrains.compose.web.attributes.target
+import io.github.blendthink.content.main.widgets.SocialLinks
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 
@@ -43,52 +42,6 @@ fun MainContent() {
             }
         }
 
-        Ul({
-            style {
-                padding(1.cssRem)
-                listStyle("none")
-            }
-        }) {
-            Li({
-                style {
-                    display(DisplayStyle.InlineBlock)
-                    padding(1.cssRem)
-                }
-            }) {
-                A(
-                    href = "https://twitter.com/blendthink",
-                    attrs = {
-                        target(ATarget.Blank)
-                    },
-                ) {
-                    I({
-                        classes("fab", "fa-twitter", "fa-3x")
-                        style {
-                            color(rgba(255, 255, 255, 0.3))
-                        }
-                    })
-                }
-            }
-            Li({
-                style {
-                    display(DisplayStyle.InlineBlock)
-                    padding(1.cssRem)
-                }
-            }) {
-                A(
-                    href = "https://github.com/blendthink",
-                    attrs = {
-                        target(ATarget.Blank)
-                    },
-                ) {
-                    I({
-                        classes("fab", "fa-github", "fa-3x")
-                        style {
-                            color(rgba(255, 255, 255, 0.3))
-                        }
-                    })
-                }
-            }
-        }
+        SocialLinks()
     }
 }

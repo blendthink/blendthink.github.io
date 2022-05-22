@@ -19,6 +19,19 @@ object AppStyle : StyleSheet() {
         }
     }
 
+    val socialLinks by style {
+        padding(1.cssRem)
+    }
+
+    val socialLink by style {
+        display(DisplayStyle.InlineBlock)
+        padding(1.cssRem)
+
+        type("svg") style {
+            color(Color.dimgray)
+        }
+    }
+
     val footerContent by style {
         display(DisplayStyle.Flex)
         justifyContent(JustifyContent.Center)
