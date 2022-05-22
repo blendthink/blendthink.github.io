@@ -1,7 +1,7 @@
-package io.github.blendthink.content.footer.components
+package io.github.blendthink.contents.footer.components
 
 import androidx.compose.runtime.Composable
-import io.github.blendthink.style.AppStyle
+import io.github.blendthink.styles.AppStyle
 import org.jetbrains.compose.web.dom.Div
 import org.jetbrains.compose.web.dom.Small
 import org.jetbrains.compose.web.dom.Text

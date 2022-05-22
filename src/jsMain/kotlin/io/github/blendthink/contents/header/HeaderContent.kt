@@ -1,4 +1,4 @@
-package io.github.blendthink.content.header
+package io.github.blendthink.contents.header
 
 import androidx.compose.runtime.Composable
 

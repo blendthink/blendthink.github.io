@@ -1,8 +1,8 @@
-package io.github.blendthink.content.footer
+package io.github.blendthink.contents.footer
 
 import androidx.compose.runtime.Composable
-import io.github.blendthink.content.footer.components.Copyright
-import io.github.blendthink.style.AppStyle
+import io.github.blendthink.contents.footer.components.Copyright
+import io.github.blendthink.styles.AppStyle
 import org.jetbrains.compose.web.dom.Div
 
 @Composable

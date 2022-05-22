@@ -1,9 +1,9 @@
-package io.github.blendthink.style
+package io.github.blendthink.styles
 
-import io.github.blendthink.extension.Tag
-import io.github.blendthink.extension.TextAlign
-import io.github.blendthink.extension.tag
-import io.github.blendthink.extension.textAlign
+import io.github.blendthink.extensions.Tag
+import io.github.blendthink.extensions.TextAlign
+import io.github.blendthink.extensions.tag
+import io.github.blendthink.extensions.textAlign
 import org.jetbrains.compose.web.css.*
 
 object AppStyle : StyleSheet() {

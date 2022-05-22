@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package io.github.blendthink.extension
+package io.github.blendthink.extensions
 
 import org.jetbrains.compose.web.css.StyleScope
 import org.jetbrains.compose.web.css.textAlign
