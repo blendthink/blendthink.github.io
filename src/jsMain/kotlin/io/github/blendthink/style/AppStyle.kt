@@ -19,6 +19,14 @@ object AppStyle : StyleSheet() {
         }
     }
 
+    val profileIcon by style {
+        type("img") style {
+            width(16.cssRem)
+            borderRadius(50.percent)
+            padding(2.cssRem)
+        }
+    }
+
     val name by style {
         marginBottom(1.5.cssRem)
         color(rgb(255, 255, 255))
