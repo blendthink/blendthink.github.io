@@ -29,13 +29,17 @@ fun SocialLink(socialMedia: SocialMedia) {
             attrs = { target(ATarget.Blank) },
         ) {
             I({
-                classes("fab", "fa-${socialMedia.name.lowercase()}", "fa-3x")
+                classes("fa-brands", "fa-${socialMedia.awesomeName}", "fa-3x")
             })
         }
     }
 }
 
-enum class SocialMedia(val link: String) {
-    Twitter("https://twitter.com/blendthink"),
-    Github("https://github.com/blendthink")
+enum class SocialMedia(
+    val link: String,
+    val awesomeName: String,
+) {
+    Twitter("https://twitter.com/blendthink", "twitter"),
+    Github("https://github.com/blendthink", "github"),
+    SpeakerDeck("https://speakerdeck.com/blendthink", "speaker-deck"),
 }
