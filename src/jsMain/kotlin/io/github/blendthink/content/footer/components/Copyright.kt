@@ -1,4 +1,4 @@
-package io.github.blendthink.content.footer.widgets
+package io.github.blendthink.content.footer.components
 
 import androidx.compose.runtime.Composable
 import io.github.blendthink.style.AppStyle

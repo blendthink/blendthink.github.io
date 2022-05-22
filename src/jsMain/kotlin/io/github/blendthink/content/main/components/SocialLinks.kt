@@ -1,4 +1,4 @@
-package io.github.blendthink.content.main.widgets
+package io.github.blendthink.content.main.components
 
 import androidx.compose.runtime.Composable
 import io.github.blendthink.style.AppStyle

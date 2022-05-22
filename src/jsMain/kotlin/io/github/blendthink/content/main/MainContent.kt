@@ -1,10 +1,10 @@
 package io.github.blendthink.content.main
 
 import androidx.compose.runtime.Composable
-import io.github.blendthink.content.main.widgets.Name
-import io.github.blendthink.content.main.widgets.ProfileIcon
-import io.github.blendthink.content.main.widgets.SocialLinks
-import io.github.blendthink.content.main.widgets.Thinking
+import io.github.blendthink.content.main.components.Name
+import io.github.blendthink.content.main.components.ProfileIcon
+import io.github.blendthink.content.main.components.SocialLinks
+import io.github.blendthink.content.main.components.Thinking
 import io.github.blendthink.style.AppStyle
 import org.jetbrains.compose.web.dom.*
 
