@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.0] - 2022/05/22
+
+### Fixed
+
+- Fix screen to fit
+
+### Changed
+
+- Change body background color to black
+- Change i tag and copyright text color to dimgray 
+
 ## [1.0.0] - 2021-09-15
 
 Released a portfolio site of blendthink 🎉
