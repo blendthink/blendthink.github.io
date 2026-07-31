@@ -1,0 +1,18 @@
+[tools]
+dart = "3.12.2"
+
+[tasks.get]
+description = "Install Dart dependencies"
+run = "dart pub get"
+
+[tasks.serve]
+description = "Run the Jaspr development server"
+run = "jaspr serve"
+
+[tasks.build]
+description = "Build the static site"
+run = "jaspr build"
+
+[tasks.check]
+description = "Analyze and build the project"
+run = ["dart analyze", "jaspr build"]
