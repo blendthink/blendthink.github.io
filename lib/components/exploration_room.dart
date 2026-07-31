@@ -4,6 +4,8 @@ import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:universal_web/web.dart' as web;
 
+import '../three_d/engineer_house_canvas.dart';
+
 @client
 class ExplorationRoom extends StatefulComponent {
   const ExplorationRoom({super.key});
@@ -166,6 +168,7 @@ class _ExplorationRoomState extends State<ExplorationRoom> {
 
     return div(classes: 'room-frame', [
       div(classes: 'room-glow', []),
+      EngineerHouseCanvas(characterX: _x, characterY: _y),
       div(
         classes: 'room',
         attributes: const {'aria-label': '3Dの開発部屋'},
