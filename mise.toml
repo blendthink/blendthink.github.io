@@ -16,3 +16,7 @@ run = "dart run jaspr_cli:jaspr build"
 [tasks.check]
 description = "Analyze and build the project"
 run = ["dart analyze", "dart run jaspr_cli:jaspr build"]
+
+[tasks.agent-check]
+description = "Validate AI agent SSoT and compatibility links"
+run = "bash tool/check-agent-ssot.sh"
