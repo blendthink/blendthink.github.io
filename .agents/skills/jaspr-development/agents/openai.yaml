@@ -1,0 +1,4 @@
+interface:
+  display_name: "Jaspr Development"
+  short_description: "Build and verify this Jaspr portfolio safely"
+  default_prompt: "Use $jaspr-development to implement this Jaspr site change."
