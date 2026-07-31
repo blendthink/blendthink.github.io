@@ -7,12 +7,12 @@ run = "dart pub get"
 
 [tasks.serve]
 description = "Run the Jaspr development server"
-run = "jaspr serve"
+run = "dart run jaspr_cli:jaspr serve"
 
 [tasks.build]
 description = "Build the static site"
-run = "jaspr build"
+run = "dart run jaspr_cli:jaspr build"
 
 [tasks.check]
 description = "Analyze and build the project"
-run = ["dart analyze", "jaspr build"]
+run = ["dart analyze", "dart run jaspr_cli:jaspr build"]
