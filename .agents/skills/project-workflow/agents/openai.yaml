@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Workflow"
+  short_description: "Complete small, safe pull requests consistently"
+  default_prompt: "Use $project-workflow to implement and deliver the next small pull request."
