@@ -93,10 +93,10 @@ packages:
     dependency: transitive
     description:
       name: build_daemon
-      sha256: "8c0535c3b2f625619f4dd1036ef1127f2e77bfedf89ed2eb2676ef076e0b6712"
+      sha256: "39ab65f7c60c19af64b9ef96e6a5d3ab48355f7dddfd98a9079d55a8cb6628fc"
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.3"
+    version: "4.1.7"
   build_runner:
     dependency: "direct dev"
     description:
@@ -109,10 +109,10 @@ packages:
     dependency: "direct dev"
     description:
       name: build_web_compilers
-      sha256: c8be4b48f09289d145c7eaa3240f1e7776c529ea1cecddf483218edd3129de3f
+      sha256: ef4bc35e0e335f8520692a333b872446697adce0618cf23c3084715ace641721
       url: "https://pub.dev"
     source: hosted
-    version: "4.8.0"
+    version: "4.8.5"
   built_collection:
     dependency: transitive
     description:
@@ -397,34 +397,34 @@ packages:
     dependency: "direct main"
     description:
       name: jaspr
-      sha256: "261e2095f2e158b4fc554273ac70f170c0256f19f5e30ba744f83ec5c620dc9a"
+      sha256: c4e7459389fadb3f48ed7c2d5165b000ad93f4aaa08f86a490eaf5d3b652bb3e
       url: "https://pub.dev"
     source: hosted
-    version: "0.23.2"
+    version: "0.23.5"
   jaspr_builder:
     dependency: "direct dev"
     description:
       name: jaspr_builder
-      sha256: "4c1c6585c18b58e85f047b4543535229bc7c4cf72ebcef18b2b8536ec546cb9c"
+      sha256: "15f62fcd3a678dbf0cf68b38fa19b6258d4708b61bff2b8b1f0d6e8302770d41"
       url: "https://pub.dev"
     source: hosted
-    version: "0.23.2"
+    version: "0.23.5"
   jaspr_cli:
     dependency: "direct dev"
     description:
       name: jaspr_cli
-      sha256: "2f2babc2ac58829b3ddcd1ff0a9038989156f673ac34b32594a4a53d853909ca"
+      sha256: af544d55373f62c520714f3897dde564dff310f0069e5fb3b9c333c184038bcd
       url: "https://pub.dev"
     source: hosted
-    version: "0.23.2"
+    version: "0.23.5"
   jaspr_router:
     dependency: "direct main"
     description:
       name: jaspr_router
-      sha256: "5ec42c13db34e03ef9d34bac715b2eba4a80e553c618e0263037be50db08bbe4"
+      sha256: "5c9347395d75e501f02e79469eb588534ae306db6fa556c8f26421381ac6cba7"
       url: "https://pub.dev"
     source: hosted
-    version: "0.8.3"
+    version: "0.9.0"
   json_annotation:
     dependency: transitive
     description:
